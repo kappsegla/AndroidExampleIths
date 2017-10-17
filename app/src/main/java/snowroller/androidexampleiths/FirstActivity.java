@@ -22,6 +22,8 @@ public class FirstActivity extends AppCompatActivity {
         Intent intent = new Intent(this , SecondActivity.class);
         //Skicka med ett meddelande som en textsträng
         intent.putExtra("Message",editText.getText().toString());
+        intent.putExtra("massage",true);
+
 
         startActivity(intent);
     }

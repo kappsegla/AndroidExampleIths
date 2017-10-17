@@ -18,9 +18,9 @@ public class SecondActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         String text = intent.getStringExtra("Message");
+        boolean massage = intent.getBooleanExtra("massage", false);
+        intent.getD
         textView = (TextView)findViewById(R.id.textView5);
         textView.setText(text);
-
-
     }
 }
