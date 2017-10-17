@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidExampleIths</string>
+    <string name="sendtext">Send</string>
+    <string name="messagerecieved">Message recieved:</string>
 </resources>

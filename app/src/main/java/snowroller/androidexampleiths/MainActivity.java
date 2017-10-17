@@ -1,5 +1,6 @@
 package snowroller.androidexampleiths;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -29,6 +30,9 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         checkBox = (CheckBox)findViewById(R.id.checkBox);
 
         checkBox.setOnCheckedChangeListener(this);
+        Intent i = getIntent();
+        
+
     }
 
     public void onButtonClicked(View view) {
