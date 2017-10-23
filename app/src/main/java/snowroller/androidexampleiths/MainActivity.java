@@ -3,6 +3,7 @@ package snowroller.androidexampleiths;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -68,5 +69,10 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         } else {
             online.setVisibility(View.INVISIBLE);
         }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+        super.onSaveInstanceState(outState, outPersistentState);
     }
 }
