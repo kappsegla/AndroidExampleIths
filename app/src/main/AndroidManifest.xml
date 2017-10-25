@@ -10,16 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".FirstActivity"/>
+        <activity android:name=".FirstActivity" />
         <activity android:name=".SecondActivity" />
-        <activity android:name=".Test"/>
+        <activity android:name=".Test" />
         <activity android:name=".EditActivity" />
         <activity android:name=".ImageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".HangmanActivity"></activity>
     </application>
 
 </manifest>

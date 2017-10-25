@@ -16,7 +16,10 @@ public class ImageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image);
+        //Load arrays of resourceIds from arrays.xml
         pictures = getResources().obtainTypedArray(R.array.pictures);
+        //Load a string array from arrays.xml
+        String[] strings = getResources().getStringArray(R.array.words);
 
         imageView = (ImageView) findViewById(R.id.imageViewGubbe);
         imageView.setOnClickListener(new View.OnClickListener() {

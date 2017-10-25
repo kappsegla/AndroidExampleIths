@@ -13,4 +13,9 @@
         <item>20</item>
         <item>50</item>
     </integer-array>
+
+    <string-array name="words">
+        <item>Hello</item>
+        <item>NumberTwo</item>
+    </string-array>
 </resources>
