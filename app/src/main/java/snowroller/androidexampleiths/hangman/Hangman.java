@@ -1,7 +1,5 @@
 package snowroller.androidexampleiths.hangman;
 
-import android.os.Bundle;
-
 import java.util.Random;
 
 /**
@@ -36,9 +34,6 @@ public class Hangman {
             guess[p] = '*';
     }
 
-    public Hangman(Bundle savedInstanceState){
-
-    }
 
     public boolean makeGuess(char playerGuess){
         boolean hit = false;
@@ -57,7 +52,5 @@ public class Hangman {
         return String.valueOf(guess);
     }
 
-    public void onSaveInstaceState(Bundle outState) {
 
-    }
 }

@@ -1,14 +1,14 @@
 package snowroller.androidexampleiths;
 
+import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
-import snowroller.androidexampleiths.hangman.Hangman;
+import snowroller.androidexampleiths.hangman.AndroidHangman;
 
 public class HangmanActivity extends AppCompatActivity {
 
-    private Hangman hangmanGame;
+    private AndroidHangman hangmanGame;
 
 
     @Override
@@ -16,9 +16,9 @@ public class HangmanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hangman);
         if( savedInstanceState != null)
-            hangmanGame = new Hangman(savedInstanceState);
+            hangmanGame = new AndroidHangman(savedInstanceState);
         else
-            hangmanGame = new Hangman();
+            hangmanGame = new AndroidHangman();
 
     }
 
